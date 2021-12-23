@@ -1,0 +1,120 @@
+body {
+  background-image: url(../images/image2.jpg);
+}
+nav {
+   display: flex;
+   flex-wrap: wrap;
+   position: right;
+   background-color: #1a1a1a;
+   margin-bottom: 90px;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	margin-top: 25px;
+	padding-left: 50px;
+	margin-bottom: 20px;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+header p {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	margin-bottom: 50px;
+	font-family: "Didot", sans-serif;
+	font-weight: bolder;
+}
+header h1 {
+	text-align: center;
+	font-size: 18px;
+	color: yellow;
+	font-family: "Didot", sans-serif;
+	font-style: italic;
+	margin-bottom: 100px;
+	
+}
+header img {
+	vertical-align: -8px;
+	margin-right: 5px;
+
+}
+form p {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+form h1 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+form h2 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+form h3 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+form h4 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+form h5 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+form h6 {
+	color: #B678C3;
+	text-align: center;
+	font-size: 30px;
+}
+#button {
+	background-color: #2b1260;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 880px;
+	margin-top: 100px;
+} 
+
+#resultats {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+footer {
+	background-color: #1a1a1a;
+	padding: 25px 100px;
+	margin-top: 400px;
+	color: white;
+	font-family: "Didot";
+}
+footer h1 {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+	size: 20px;
+}
+footer a:hover {
+	border-bottom: 1px solid;
+	border-bottom-color: white;
+}
+footer p {
+	text-align: right;
+	font-size: 15px;
+}

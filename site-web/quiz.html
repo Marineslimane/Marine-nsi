@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Marine Slimane</title>
+		<link href="styles/quiz.css" rel="stylesheet">
+		<script src="scripts/quiz.js"> </script>
+    </head>
+	
+	<body>  
+		<nav>
+			<a href ="index.html"> <img src="images/maison.png" alt = "boutton d'accueil" height= "40" width = "40"> </a>
+			<a href ="page2.html">PLANÈTES</a>
+			<a href ="soleil.html">SOLEIL</a>
+			<a href ="lune.html">LUNE</a>
+			<a href ="quiz.html">QUIZ</a>
+		</nav>
+		
+		<header>	
+			<p> Voyons ce que vous avez retenu en faisant un petit quiz. Essayez de ne pas tricher ;) </p>
+			<h1><img src="images/aide.png" alt = "button d'aide" height= "30" width = "30"> Cochez les réponses qui vous semblent justes puis cliquez sur "J'AI FINI !". Une réponse par question.</h1>
+		</header>
+		
+	
+		<form name = "quiz" id = "quiz">  
+			<div> 
+				<h1> 1. De quoi le Soleil est-t'il principalement composé ?</h1> 
+				<p> <input	type="radio" name = "question1" value="oxygene" > A. D'oxygène</p>
+				<p> <input	type="radio" name = "question1" value="hydrogene"> B. D'hydrogène</p>
+				<p> <input	type="radio" name = "question1" value="co2"> C. De CO2</p>
+				<p> <input	type="radio" name = "question1" value="calcium"> D. De calcium</p>
+			</div> 
+			
+			<div> 
+				<h2> 2. Quelle est l'origine du nom des planètes, en général ?</h2> 
+				<p> <input	type="radio" name = "question2" value="grec"> A. La mythologie grecque</p>
+				<p> <input	type="radio" name = "question2" value="histoire"> B. Des personnages historiques</p>
+				<p> <input	type="radio" name = "question2" value="science"> C. Des noms de scientifiques</p>
+				<p> <input	type="radio" name = "question2" value="romaine"> D. La mythologie romaine </p>
+			</div> 
+			
+			<div> 
+				<h3> 3. En quelle année un astronaute est-t'il allé sur la lune pour la première fois ?</h3> 
+				<p> <input	type="radio" name = "question3" value="90"> A. 1990</p>
+				<p> <input	type="radio" name = "question3" value="59"> B. 1959</p>
+				<p> <input	type="radio" name = "question3" value="69"> C. 1969</p>
+				<p> <input	type="radio" name = "question3" value="89"> D. 1989</p>
+			</div> 
+			
+			<div> 
+				<h4> 4. Comment appelle-t'on les quatre plus grandes lunes de Jupiter ?</h4> 
+				<p> <input	type="radio" name = "question4" value="jupiteuses"> A. Les Jupiteuses</p>
+				<p> <input	type="radio" name = "question4" value="galilee"> B. Les satellites galiléens</p>
+				<p> <input	type="radio" name = "question4" value="fantastiques"> C. Les 4 fantastiques</p>
+				<p> <input	type="radio" name = "question4" value="lunes"> D. Les grandes lunes </p>
+			</div> 
+			
+			<div> 
+				<h5> 5. Dans combien d'années le Soleil se transformera en naine blanche, selon les scientifiques ?</h5> 
+				<p> <input	type="radio" name = "question5" value="6.5"> A. 6.5 milliards </p>
+				<p> <input	type="radio" name = "question5" value="7.9"> B. 7.9 milliards</p>
+				<p> <input	type="radio" name = "question5" value="5.6"> C. 5.6 milliards</p>
+				<p> <input	type="radio" name = "question5" value="5.5"> D. 5.5 milliards</p>
+			</div> 
+			
+			<div> 
+				<h6> 6. Quelle est la planète la plus chaude du système solaire ?</h6> 
+				<p> <input	type="radio" name = "question6" value="mars"> A. Mars </p>
+				<p> <input	type="radio" name = "question6" value="neptune"> B. Neptune </p>
+				<p> <input	type="radio" name = "question6" value="venus"> C. Venus </p>
+				<p> <input	type="radio" name = "question6" value="mercure"> D. Mercure </p>
+			</div> 
+			
+			<input	type="button" name = "fin" value="J'AI FINI !" id="button" onclick = "verifier()"> 
+		</form> 
+		
+		<p id="resultats"></p>
+		
+		
+		
+		
+	<footer>
+		<h1>Merci de votre visite !</h1>
+		<a href ="page1.html">Plan du site</a>
+		<p>Made in Annecy, France by Marine Slimane</p>	
+	</footer>
+	
+	</body>  
+	
+	</html>  
+

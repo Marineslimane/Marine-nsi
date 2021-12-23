@@ -1,0 +1,60 @@
+body {
+  background-image: url(../images/star-wars3.jpg);
+}
+h1 {
+	text-align: center;
+	font-size: 100px;
+	color: white;
+	text-shadow: #2b1260 0 10px;
+	font-family: "Didot", sans-serif;
+}
+h2 {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-family: "Georgia";
+}
+section {
+	padding-top: 50px;
+	color:#feda4a; /* a retirer quand liens finis */
+	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+}	
+section a {
+	color: #ffe300;
+	text-decoration: none;
+}
+section h6 {
+	font-size: 30px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-style: italic;
+}
+section h5 {
+	font-size: 50px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-style: italic;
+	font-weight: lighter;
+}
+section h4 {
+	font-size: 70px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-style: italic;
+	font-weight: lighter;
+}
+section h3 {
+	font-size: 80px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-style: italic;
+	font-weight: lighter;
+}
+section p {
+	font-size: 70px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-style: italic;
+	
+}
