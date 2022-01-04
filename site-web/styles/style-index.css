@@ -3,9 +3,8 @@ body {
 }
 
 header img {
-	margin-left: 700px;
-	margin-top: -60px;
-	display: flex;
+	display: block;
+	margin: 0 auto;
 }
 header h1 {
 	text-align: center;
