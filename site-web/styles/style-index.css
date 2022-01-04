@@ -5,6 +5,7 @@ body {
 header img {
 	margin-left: 700px;
 	margin-top: -60px;
+	display: flex;
 }
 header h1 {
 	text-align: center;
