@@ -32,5 +32,6 @@ button {
 	display: inline-block;
 	font-size: 20px;
 	margin-left: 860px;
-	font-family: "Didot", sans-serif;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
 } 
