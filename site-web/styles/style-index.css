@@ -7,6 +7,11 @@ header img {
 	margin: auto;
 	display: flex;
 }
+header img:hover {
+background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448');
+}
+
+
 header h1 {
 	text-align: center;
 	font-size: 100px;
