@@ -54,6 +54,10 @@ section a {
 	padding-left: 50px;
 }
 
+section a:hover {
+	transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+}
+
 footer {
 	background-color: #1a1a1a;
 	padding: 25px 100px;
