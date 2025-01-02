@@ -52,6 +52,7 @@ header img {
 section a {
 	padding-right: 100px; 
 	padding-left: 50px;
+	transition: transform 0.3s ease; /* Ajoute une transition fluide */
 }
 
 section a:hover {
