@@ -8,11 +8,8 @@ header img {
 	display: flex;
 }
 header img:hover {
-	background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448');
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	opacity: 0;
+	content:url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448');
+	transition: opacity 0.3s ease;
 }
 
 
