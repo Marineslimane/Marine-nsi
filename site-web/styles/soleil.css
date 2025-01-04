@@ -25,7 +25,9 @@ header h1 {
 	font-size: 70px;
 	color: white;
 	text-shadow: orange 0 4px;
-	font-family: "Didot", sans-serif;
+	font-family: "Arial", sans-serif;
+	margin: 0 auto; /* Centrer le paragraphe */
+   	width: 80%; /* Réduire la largeur pour ajouter de l'espace sur les côtés */
 }
 section img {
 	margin-left: 400px;
