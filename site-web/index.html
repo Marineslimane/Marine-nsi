@@ -25,18 +25,18 @@
 
 		<script>
 	
-	    		const earthGif = document.getElementById("earthGif");
+	    		const image = document.getElementById("image");
 	
-			earthGif.addEventListener("mouseenter", () => {
+			image.addEventListener("mouseenter", () => {
 				const gifSource = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448";
-				earthGif.src = ""; // Réinitialise le GIF
+				image.src = ""; // Réinitialise le GIF
 				setTimeout(() => {
-					earthGif.src = gifSource; // Recharge le GIF
+					image.src = gifSource; // Recharge le GIF
 				}, 10); // Légère pause pour permettre le rechargement
 			});
 	
-	    		earthGif.addEventListener("mouseleave", () => {
-	      			earthGif.src = "images/earth2.png"; // Revenir à l'image statique
+	    		image.addEventListener("mouseleave", () => {
+	      			image.src = "images/earth2.png"; // Revenir à l'image statique
 	   		});
 			
 		</script>
