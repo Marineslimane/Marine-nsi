@@ -52,11 +52,15 @@ header img {
 section a {
 	padding-right: 100px; 
 	padding-left: 50px;
-	transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+/* Ajoutez une transition fluide pour les images */
+section img {
+    transition: transform 0.3s ease; /* Applique une transition fluide */
 }
 
-section a:hover {
-	transform: scale(1.3); /* Agrandit l'image de 10% au survol */
+/* Appliquez le zoom à l'image au survol */
+section img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image (10%) */
 }
 
 footer {
