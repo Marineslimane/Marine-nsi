@@ -29,18 +29,26 @@ header h1 {
 	font-family: "Didot", sans-serif;
 	margin-left: 50px;
 }
-aside p {
-	color: white;
-	font-size: 25px;
-	text-align: left;
-	margin-top: -160px;
-	margin-left: 1490px;
-	font-weight: bolder;
-	font-family: "Didot", sans-serif;
+aside {
+    display: flex; /* Met le texte et l'image côte à côte */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: space-between; /* Crée une séparation équilibrée */
+    margin: 0 10%; /* Ajoute des marges sur les côtés pour centrer le tout */
 }
+
 aside img {
-	margin-top: 20px;
-	margin-left: 1590px;
+    width: 40%; /* Réduit la taille de l'image à 40% de la largeur du conteneur */
+    height: auto; /* Garde les proportions de l'image */
+}
+
+aside p {
+    width: 50%; /* Occupe la moitié de l'espace pour le texte */
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    font-family: "Didot", sans-serif;
+    margin: 0; /* Supprime les marges inutiles */
+    text-align: left;
 }
 footer {
 	background-color: #1a1a1a;
