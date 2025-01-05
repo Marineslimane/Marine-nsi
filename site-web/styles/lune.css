@@ -1,7 +1,5 @@
 body {
   background-image: url(../images/image2.jpg);
-  background-repeat: no-repeat;
-  background-size: auto; /* Keeps the original size of the image */
 }
 nav {
    display: flex;
@@ -37,12 +35,12 @@ aside {
 }
 
 aside img {
-    width: 60%; /* Réduit la taille de l'image à 40% de la largeur du conteneur */
+    width: 20%; /* Réduit la taille de l'image à 40% de la largeur du conteneur */
     height: auto; /* Garde les proportions de l'image */
 }
 
 aside p {
-    width: 50%; /* Occupe la moitié de l'espace pour le texte */
+    width: 60%; /* Occupe la moitié de l'espace pour le texte */
     font-size: 25px;
     color: white;
     font-weight: bolder;
