@@ -2,6 +2,8 @@ body {
   background-image: url(../images/image2.jpg);
   background-repeat: no-repeat;
   background-color: black;
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 nav {
    display: flex;
