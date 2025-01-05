@@ -22,24 +22,6 @@
 		<a href="page1.html">
 			<button>C'EST PARTI !</button>
 		</a>
-
-		<script>
-	
-	    		const image = document.getElementById("image");
-	
-			image.addEventListener("mouseenter", () => {
-				const gifSource = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif?20201022124448";
-				image.src = ""; // Réinitialise le GIF
-				setTimeout(() => {
-					image.src = gifSource; // Recharge le GIF
-				}, 10); // Légère pause pour permettre le rechargement
-			});
-	
-	    		image.addEventListener("mouseleave", () => {
-	      			image.src = "images/earth2.png"; // Revenir à l'image statique
-	   		});
-			
-		</script>
 	</body>
 
 </html>
