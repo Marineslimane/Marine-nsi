@@ -1,7 +1,6 @@
 body {
   background-image: url(../images/image2.jpg);
   background-repeat: no-repeat;
-  background-position: center; /* Center the background */
   background-size: auto; /* Keeps the original size of the image */
 }
 nav {
