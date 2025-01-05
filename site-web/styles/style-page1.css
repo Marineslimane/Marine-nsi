@@ -29,6 +29,7 @@ section h6 {
 	margin-bottom: 5px;
 	margin-top: 20px;
 	font-style: italic;
+	transition: transform 0.3s ease; /* Ajoute une transition pour le zoom */
 }
 section h5 {
 	font-size: 50px;
@@ -36,6 +37,7 @@ section h5 {
 	margin-top: 20px;
 	font-style: italic;
 	font-weight: lighter;
+	transition: transform 0.3s ease; /* Ajoute une transition pour le zoom */
 }
 section h4 {
 	font-size: 70px;
@@ -43,6 +45,7 @@ section h4 {
 	margin-top: 20px;
 	font-style: italic;
 	font-weight: lighter;
+	transition: transform 0.3s ease; /* Ajoute une transition pour le zoom */
 }
 section h3 {
 	font-size: 80px;
@@ -50,11 +53,15 @@ section h3 {
 	margin-top: 20px;
 	font-style: italic;
 	font-weight: lighter;
+	transition: transform 0.3s ease; /* Ajoute une transition pour le zoom */
 }
 section p {
 	font-size: 70px;
 	margin-bottom: 5px;
 	margin-top: 20px;
 	font-style: italic;
-	
+	transition: transform 0.3s ease; /* Ajoute une transition pour le zoom */	
+}
+section h3:hover, section h4:hover, section h5:hover, section h6:hover, section p:hover {
+    transform: scale(1.1); /* Agrandit légèrement le texte */
 }
