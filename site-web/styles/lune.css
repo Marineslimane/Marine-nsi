@@ -48,7 +48,6 @@ aside p {
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
     margin: 0; /* Supprime les marges inutiles */
     text-align: left;
-    white-space:nowrap;
 }
 footer {
 	background-color: #1a1a1a;
