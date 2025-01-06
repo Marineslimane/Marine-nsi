@@ -41,6 +41,7 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 300px;
 }
 button {
 	padding: 15px 32px;
