@@ -41,7 +41,7 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: auto;
 }
 button {
 	padding: 15px 32px;
@@ -58,6 +58,7 @@ button {
   	letter-spacing: 2px;
   	position: relative;
   	transition: all .35s;
+	margin: 0 auto;
 } 
 button span{
   position: relative;
