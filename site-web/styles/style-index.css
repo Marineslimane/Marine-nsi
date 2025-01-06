@@ -32,10 +32,14 @@ header p {
 	margin-top: -10px;
 	font-weight: 300;
 }
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 button {
-	background-color: #2b1260;
-	border: none;
-	color: white;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -45,5 +49,32 @@ button {
 	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	cursor: pointer;
-
+	color: #333;
+ 	border: 2px solid #333;
+  	letter-spacing: 2px;
+  	position: relative;
+  	transition: all .35s;
 } 
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2b1260;
+  transition: all .35s;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover:after{
+  width: 100%;
+}
