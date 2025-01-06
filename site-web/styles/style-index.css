@@ -26,7 +26,7 @@ header p {
 	text-align: center;
 	font-size: 30px;
 	color: white;
-	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+	font-family: Inter, sans-serif, light-italic; /* "Didot", sans-serif; */
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	text-shadow: black 0 3px;
 	margin-top: -10px;
@@ -42,7 +42,8 @@ button {
 	display: inline-block;
 	font-size: 20px;
 	margin-left: 860px;
-	font-family: "Arial", sans-serif;
+	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	cursor: pointer;
-	box-shadow: 6px 6px 2px 1px rgba(234, 234, 234, .8);
+
 } 
