@@ -38,6 +38,9 @@ header p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button {
 	padding: 15px 32px;
@@ -45,7 +48,7 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 20px;
-	margin-left: 860px;
+	/*margin-left: 860px;*/
 	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	cursor: pointer;
