@@ -44,9 +44,10 @@ aside p {
     font-size: 25px;
     color: white;
     font-weight: bolder;
-    font-family: "Arial", sans-serif;
+    font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
     margin: 0; /* Supprime les marges inutiles */
-    text-align: center;
+    text-align: left;
 }
 footer {
 	background-color: #1a1a1a;
