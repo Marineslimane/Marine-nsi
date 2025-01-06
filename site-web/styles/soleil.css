@@ -37,7 +37,7 @@ section p {
 	color: white;
 	text-align: center;
 	margin-top: 200px;
-	font-weight: bolder;
+	font-weight: 400;
 	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
  	margin: 0 auto; /* Centrer le paragraphe */
