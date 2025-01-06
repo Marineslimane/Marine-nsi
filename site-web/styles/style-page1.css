@@ -6,20 +6,24 @@ h1 {
 	font-size: 100px;
 	color: white;
 	text-shadow: #2b1260 0 10px;
-	font-family: "Didot", sans-serif;
+	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 h2 {
 	text-align: center;
 	font-size: 25px;
 	color: white;
-	font-family: "Arial";
-	font-weight: lighter;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+	font-weight: 300;
 }
 section {
 	padding-top: 50px;
 	color:#feda4a; /* a retirer quand liens finis */
 	text-align: center;
-	font-family: 'Pathway Gothic One', sans-serif;
+	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+/* 	font-family: 'Pathway Gothic One', sans-serif; */
 }	
 section a {
 	color: #ffe300;
