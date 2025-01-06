@@ -18,7 +18,9 @@ header h1 {
 	font-size: 100px;
 	color: white;
 	text-shadow: #2b1260 0 10px;
-	font-family: "Didot", sans-serif;
+	font-family: Inter, sans-serif; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+
 }
 header p {
 	text-align: center;
