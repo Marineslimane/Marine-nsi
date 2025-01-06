@@ -47,36 +47,50 @@ form p {
 	color: white;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h1 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h2 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h3 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h4 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h5 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 form h6 {
 	color: #B678C3;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 #button {
 	background-color: #2b1260;
@@ -95,6 +109,8 @@ form h6 {
 	color: white;
 	text-align: center;
 	font-size: 30px;
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 footer {
 	background-color: #1a1a1a;
