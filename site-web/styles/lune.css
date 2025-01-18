@@ -50,7 +50,7 @@ aside p {
     text-align: left;
 }
 .galerie {
-  overflow-x: auto; /* Active le défilement horizontal */
+  overflow-x: hidden; 
   white-space: nowrap; /* Empêche les images de passer à la ligne */
   margin: 20px auto;
   padding: 10px;
@@ -59,7 +59,9 @@ aside p {
   border: 1px solid #ccc; /* Optionnel : pour un style */
   border-radius: 8px; /* Optionnel : coins arrondis */
 }
-
+.galerie:hover {
+  overflow-x: auto;
+}
 .galerie-images {
   display: inline-flex; /* Crée une ligne flexible horizontale */
   gap: 10px; /* Espace entre les images */
