@@ -49,6 +49,28 @@ aside p {
     margin: 0; /* Supprime les marges inutiles */
     text-align: left;
 }
+.galerie {
+  overflow-x: auto; /* Active le défilement horizontal */
+  white-space: nowrap; /* Empêche les images de passer à la ligne */
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%; /* Ajuste la largeur au conteneur parent */
+  max-width: 600px; /* Largeur maximale */
+  border: 1px solid #ccc; /* Optionnel : pour un style */
+  border-radius: 8px; /* Optionnel : coins arrondis */
+}
+
+.galerie-images {
+  display: inline-flex; /* Crée une ligne flexible horizontale */
+  gap: 10px; /* Espace entre les images */
+}
+
+.galerie-images img {
+  max-height: 150px; /* Hauteur maximale des images */
+  border: 2px solid #ddd; /* Optionnel : bordure des images */
+  border-radius: 4px; /* Optionnel : coins arrondis des images */
+  object-fit: cover; /* Ajuste l'image pour qu'elle ne soit pas déformée */
+}
 footer {
 	background-color: #1a1a1a;
 	padding: 25px 100px;
