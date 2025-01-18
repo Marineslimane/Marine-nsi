@@ -48,7 +48,8 @@ footer {
 	padding: 25px 100px;
 	margin-top: 20px;
 	color: white;
-	font-family: "Didot";
+	font-family: Inter, sans-serif, light italic; /* "Didot", sans-serif; */
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 footer h1 {
 	margin-bottom: 30px;
