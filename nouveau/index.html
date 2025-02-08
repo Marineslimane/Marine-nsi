@@ -1,18 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Moderne</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Moderne</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 5%;
+      background-color: #2a2a2a;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .images-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .image {
+      max-width: 80%;
+      height: auto;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .image.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .image:nth-child(1) { transition-delay: 0.5s; }
+    .image:nth-child(2) { transition-delay: 1s; }
+    .image:nth-child(3) { transition-delay: 1.5s; }
+  </style>
 </head>
 <body>
-    <div class="hero">Bienvenue sur mon site</div>
-    <div class="gallery">
-        <img src="https://source.unsplash.com/random/800x600?nature" alt="Nature 1">
-        <img src="https://source.unsplash.com/random/800x601?nature" alt="Nature 2">
-        <img src="https://source.unsplash.com/random/800x602?nature" alt="Nature 3">
-    </div>
-    <script src="script.js"></script>
+
+  <section class="hero">
+    <h1 id="hero-title">Titre Principal à la Mode</h1>
+  </section>
+
+  <section class="images-container">
+    <img src="image1.jpg" alt="Image 1" class="image" id="image1">
+    <img src="image2.jpg" alt="Image 2" class="image" id="image2">
+    <img src="image3.jpg" alt="Image 3" class="image" id="image3">
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const title = document.getElementById('hero-title');
+      const images = document.querySelectorAll('.image');
+      
+      if (window.scrollY > 100) {
+        title.style.opacity = '1';
+        title.style.transform = 'translateX(0)';
+      }
+
+      images.forEach(image => {
+        if (image.getBoundingClientRect().top < window.innerHeight) {
+          image.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
