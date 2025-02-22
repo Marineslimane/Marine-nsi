@@ -86,15 +86,21 @@
         .section {
             display: flex;
             height: 100vh;
-            background-color: white;
-            align-items: flex-start; /* Changed to align content to the top */
+            align-items: flex-start;
             justify-content: space-between;
-            padding: 5vh 10vw; /* Added top padding to move content up */
+            padding: 5vh 10vw;
+            background-image: url('image1.jpg'); /* Added background image */
+            background-size: cover; /* Ensures the image covers the entire section */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
         }
 
         .text-content {
             width: 50%;
             text-align: left;
+            background-color: rgba(255, 255, 255, 0.8); /* Added a semi-transparent white background for readability */
+            padding: 20px; /* Added padding for better spacing */
+            border-radius: 10px; /* Added rounded corners */
         }
 
         .text-content h1 {
@@ -105,12 +111,12 @@
         .text-content p {
             font-size: 1.5rem;
             margin-bottom: 50px;
-            white-space: pre-line; /* Ensures text breaks at the end of sentences */
+            white-space: pre-line;
         }
 
         .memories {
             font-size: 2rem;
-            margin-left: 20px; /* Added margin to shift text to the right */
+            margin-left: 20px;
         }
 
         .memories a {
