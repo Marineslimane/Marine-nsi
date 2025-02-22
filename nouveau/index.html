@@ -21,7 +21,6 @@
         body, html {
             height: 100%;
             font-family: 'Harmond', sans-serif;
-            /* Removed overflow: hidden to enable scrolling */
         }
 
         .video-container {
@@ -57,13 +56,13 @@
             font-size: 1.5rem;
             color: white;
             position: absolute;
-            top: 65%; /* Moved down 5% */
+            top: 65%;
             text-align: center;
         }
 
         .button-container {
             position: absolute;
-            top: 75%; /* Moved down 5% */
+            top: 75%;
             text-align: center;
         }
 
@@ -80,17 +79,17 @@
 
         .start-button:hover {
             transform: scale(1.1);
-            background-color: white; /* New hover effect */
-            color: black; /* New hover effect */
+            background-color: white;
+            color: black;
         }
 
         .section {
             display: flex;
             height: 100vh;
             background-color: white;
-            align-items: center;
+            align-items: flex-start; /* Changed to align content to the top */
             justify-content: space-between;
-            padding: 0 10vw;
+            padding: 5vh 10vw; /* Added top padding to move content up */
         }
 
         .text-content {
@@ -100,16 +99,18 @@
 
         .text-content h1 {
             font-size: 3rem;
-            margin-bottom: 30px; /* Increased spacing */
+            margin-bottom: 30px;
         }
 
         .text-content p {
             font-size: 1.5rem;
-            margin-bottom: 50px; /* Increased spacing */
+            margin-bottom: 50px;
+            white-space: pre-line; /* Ensures text breaks at the end of sentences */
         }
 
         .memories {
             font-size: 2rem;
+            margin-left: 20px; /* Added margin to shift text to the right */
         }
 
         .memories a {
@@ -117,7 +118,7 @@
             font-size: 1.5rem;
             color: black;
             text-decoration: none;
-            margin-top: 20px; /* Increased spacing */
+            margin-top: 20px;
             transition: transform 0.3s ease;
         }
 
@@ -136,7 +137,6 @@
     </style>
 </head>
 <body>
-    <!-- ALL HTML REMAINS EXACTLY THE SAME -->
     <div class="video-container">
         <video autoplay muted loop>
             <source src="video1.mp4" type="video/mp4">
