@@ -20,8 +20,8 @@
 
         body, html {
             height: 100%;
-            font-family: 'Harmond';
-            scroll-behavior: smooth;
+            font-family: 'Harmond', sans-serif;
+            overflow: hidden;
         }
 
         .video-container {
@@ -46,69 +46,90 @@
             z-index: -1;
         }
 
-        .content-container {
-            display: flex;
-            height: 100vh;
-        }
-
-        .content-left, .content-right {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .content-left {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        .content-right {
-            background-color: #ddd;
-        }
-
-        .content-right img {
-            max-width: 100%;
-            height: auto;
-        }
-
         .video-text {
-            font-family: 'Harmond';
             font-size: 15rem;
             color: white;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
             position: absolute;
-            z-index: 2;
         }
 
-        .video-subtext {
+        .subtext {
             font-size: 1.5rem;
             color: white;
             position: absolute;
-            bottom: 20%;
+            top: 60%;
             text-align: center;
-            width: 100%;
         }
 
-        .scroll-button {
+        .button-container {
             position: absolute;
-            bottom: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 20px;
-            background: transparent;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s;
+            top: 70%;
+            text-align: center;
         }
 
-        .scroll-button:hover {
-            background: white;
+        .start-button {
+            font-size: 1.5rem;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: transparent;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .start-button:hover {
+            transform: scale(1.1);
+        }
+
+        .section {
+            display: flex;
+            height: 100vh;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10vw;
+        }
+
+        .text-content {
+            width: 50%;
+            text-align: left;
+        }
+
+        .text-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .memories {
+            font-size: 2rem;
+        }
+
+        .memories a {
+            display: block;
+            font-size: 1.5rem;
             color: black;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .memories a:hover {
+            transform: scale(1.1);
+        }
+
+        .image-content {
+            width: 40%;
+        }
+
+        .image-content img {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -119,17 +140,32 @@
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
         <h1 class="video-text">Rewind</h1>
-        <p class="video-subtext">Une sorte de time capsule virtuelle pour se rappeler des meilleurs moments</p>
-        <button class="scroll-button" onclick="document.getElementById('content-section').scrollIntoView({ behavior: 'smooth' });">C'est parti !</button>
+        <p class="subtext">Une sorte de time capsule virtuelle pour se rappeler des meilleurs moments</p>
+        <div class="button-container">
+            <button class="start-button" onclick="scrollDown()">C'est parti !</button>
+        </div>
     </div>
     
-    <div id="content-section" class="content-container">
-        <div class="content-left">
-            <p>Bienvenue sur la section suivante du site. Ici, vous pouvez découvrir plus de contenu intéressant !</p>
+    <div class="section" id="info-section">
+        <div class="text-content">
+            <h1>Le principe</h1>
+            <p>Sélectionnez les souvenirs que vous souhaitez parcourir et plongez dans une aventure. Une documentation de mes meilleurs moments de 2024.</p>
+            <h1>Souvenirs</h1>
+            <div class="memories">
+                <a href="#">Valence, Espagne</a>
+                <a href="#">Tunisie</a>
+                <a href="#">Villes de France</a>
+            </div>
         </div>
-        <div class="content-right">
-            <img src="image.jpg" alt="Image descriptive">
+        <div class="image-content">
+            <img src="image.jpg" alt="Souvenirs">
         </div>
     </div>
+
+    <script>
+        function scrollDown() {
+            document.getElementById("info-section").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
