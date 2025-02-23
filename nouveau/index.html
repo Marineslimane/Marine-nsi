@@ -229,12 +229,71 @@
         #topbar-r:hover {
             color: #ccc; /* Change color on hover */
         }
+
+        /* Sidebar Styles */
+        #sidebar-left, #sidebar-right {
+            position: fixed;
+            top: 0;
+            width: 50px; /* Thin sidebars */
+            height: 100%;
+            background-color: white;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        #sidebar-left {
+            left: -50px; /* Start off-screen */
+        }
+
+        #sidebar-right {
+            right: -50px; /* Start off-screen */
+        }
+
+        /* Rewind Symbol Animation */
+        .rewind-symbol {
+            position: absolute;
+            width: 100%; /* Fill the sidebar width */
+            height: auto;
+            transform: rotate(90deg); /* Rotate the image by 90 degrees */
+            animation: moveDown 5s linear infinite;
+        }
+
+        @keyframes moveDown {
+            0% {
+                transform: translateY(-100%) rotate(90deg); /* Start above the viewport */
+            }
+            100% {
+                transform: translateY(100vh) rotate(90deg); /* Move down past the viewport */
+            }
+        }
+
+        /* Add spacing between images */
+        .rewind-symbol:nth-child(2) {
+            animation-delay: 1.5s; /* Delay the second image */
+        }
+
+        .rewind-symbol:nth-child(3) {
+            animation-delay: 3s; /* Delay the third image */
+        }
     </style>
 </head>
 <body>
     <!-- Top Bar -->
     <div id="topbar">
         <a href="#" id="topbar-r">R</a>
+    </div>
+
+    <!-- Sidebars -->
+    <div id="sidebar-left">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
+    </div>
+    <div id="sidebar-right">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
+        <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
     </div>
 
     <!-- Video Section -->
@@ -284,12 +343,18 @@
         window.addEventListener('scroll', function() {
             const videoContainer = document.querySelector('.video-container');
             const topbar = document.getElementById('topbar');
+            const sidebarLeft = document.getElementById('sidebar-left');
+            const sidebarRight = document.getElementById('sidebar-right');
             const videoBottom = videoContainer.getBoundingClientRect().bottom;
 
             if (videoBottom < 0) {
                 topbar.style.top = '0'; // Show the top bar
+                sidebarLeft.style.left = '0'; // Show the left sidebar
+                sidebarRight.style.right = '0'; // Show the right sidebar
             } else {
                 topbar.style.top = '-50px'; // Hide the top bar
+                sidebarLeft.style.left = '-50px'; // Hide the left sidebar
+                sidebarRight.style.right = '-50px'; // Hide the right sidebar
             }
         });
 
