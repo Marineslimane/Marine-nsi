@@ -23,6 +23,30 @@
             font-family: 'Harmond', sans-serif;
         }
 
+        /* Main Content Layout */
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10vw;
+            margin-top: 100px; /* Space for the top bar */
+        }
+
+        .title {
+            font-size: 6rem;
+            color: black;
+            width: 50%;
+        }
+
+        .photo {
+            width: 40%;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: white;
             padding: 20px;
@@ -54,15 +78,22 @@
         /* Top Bar Styles */
         #topbar {
             position: fixed;
-            top: -50px; /* Start off-screen */
+            top: 0;
             width: 100%;
             height: 50px;
             background-color: white;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
-            transition: top 0.3s ease;
+            padding: 0 20px;
             z-index: 1000;
+        }
+
+        #topbar-l {
+            font-size: 2rem;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         #topbar-r {
@@ -74,60 +105,96 @@
         }
 
         #topbar-r:hover {
-            color: #ccc; /* Change color on hover */
+            color: #ccc;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         /* Sidebar Styles */
         #sidebar-left, #sidebar-right {
             position: fixed;
             top: 0;
-            width: 40px; /* Thin sidebars */
+            width: 40px;
             height: 100%;
             background-color: white;
             z-index: 1000;
-            transition: transform 0.3s ease;
-            overflow: hidden;
         }
 
         #sidebar-left {
-            left: -50px; /* Start off-screen */
+            left: 0;
         }
 
         #sidebar-right {
-            right: -50px; /* Start off-screen */
+            right: 0;
         }
 
         /* Rewind Symbol Animation */
         .rewind-symbol {
             position: absolute;
-            width: 100%; /* Fill the sidebar width */
+            width: 100%;
             height: auto;
-            transform: rotate(90deg); /* Rotate the image by 90 degrees */
+            transform: rotate(90deg);
             animation: moveDown 5s linear infinite;
         }
 
         @keyframes moveDown {
             0% {
-                transform: translateY(-100%) rotate(90deg); /* Start above the viewport */
+                transform: translateY(-100%) rotate(90deg);
             }
             100% {
-                transform: translateY(100vh) rotate(90deg); /* Move down past the viewport */
+                transform: translateY(100vh) rotate(90deg);
             }
         }
 
-        /* Add spacing between images */
         .rewind-symbol:nth-child(2) {
-            animation-delay: 1.5s; /* Delay the second image */
+            animation-delay: 1.5s;
         }
 
         .rewind-symbol:nth-child(3) {
-            animation-delay: 3s; /* Delay the third image */
+            animation-delay: 3s;
         }
     </style>
 </head>
 <body>
     <!-- Top Bar -->
     <div id="topbar">
+        <div class="dropdown">
+            <span id="topbar-l">Menu</span>
+            <div class="dropdown-content">
+                <a href="page1.html">Valence, Espagne</a>
+                <a href="#">Tunisie</a>
+                <a href="#">Villes de France</a>
+            </div>
+        </div>
         <a href="#" id="topbar-r">Rewind</a>
     </div>
 
@@ -143,12 +210,18 @@
         <img src="image5.png" alt="Rewind Symbol" class="rewind-symbol">
     </div>
 
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="title">Valence, Espagne</div>
+        <div class="photo">
+            <img src="image2.jpg" alt="Valence, Espagne">
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="site-name">Rewind</div>
         <div class="made-by">Made in 2025</div>
     </footer>
-
 </body>
 </html>
-
