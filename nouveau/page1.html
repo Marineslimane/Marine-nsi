@@ -24,7 +24,7 @@
             background-image: url('fond.jpg');
         }
 
-              /* Main Content Layout */
+        /* Main Content Layout */
         .main-content {
             display: flex;
             align-items: center;
@@ -40,7 +40,6 @@
         }
         
         .photo {
-            /* Remove the width constraint */
             max-width: 50%; /* Ensure it doesn't exceed the container */
         }
         
@@ -50,18 +49,32 @@
             border-radius: 10px;
         }
         
-               /* Carousel Styles */
+        /* White Bar Styles */
+        .white-bar {
+            width: 100%;
+            background-color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px; /* Adjust spacing as needed */
+        }
+
+        .white-bar span {
+            font-family: 'Harmond', sans-serif;
+            font-size: 2rem;
+            color: black;
+        }
+        
+        /* Carousel Styles */
         .carousel {
             display: flex;
             overflow-x: auto;
             gap: 20px;
             padding: 20px 0;
-            margin-top: 50px;
+            margin-top: 20px; /* Adjusted spacing */
             margin-left: 200px;
         }
         
         .carousel img {
-            /* Remove fixed width and height */
             max-width: 15%; /* Ensure images don't exceed their natural size */
             height: auto; /* Maintain aspect ratio */
             border-radius: 10px;
@@ -244,6 +257,11 @@
         <div class="photo">
             <img src="image6.jpg" alt="Valence, Espagne">
         </div>
+    </div>
+
+    <!-- White Bar with Text -->
+    <div class="white-bar">
+        <span>Valence</span>
     </div>
 
     <!-- Carousel -->
