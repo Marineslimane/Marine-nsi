@@ -89,13 +89,15 @@
 
         /* Text Section Styles */
         .text-section {
-            width: 100%;
+            width: calc(100% - 560px); /* Match the carousel's left margin (280px * 2) */
             max-width: 800px; /* Adjust as needed */
-            margin-left: 280px;
+            margin: 0 auto; /* Center the text section */
             padding: 20px;
             font-family: 'Harmond', sans-serif;
             font-size: 2rem;
             color: black;
+            line-height: 1.6; /* Improve readability */
+            text-align: left; /* Align text to the left */
             margin-top: 20px; /* Adjust spacing as needed */
             margin-bottom: 200px; /* Add space before the footer */
         }
