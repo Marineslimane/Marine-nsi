@@ -24,7 +24,7 @@
             background-image: url('fond.jpg');
         }
 
-        /* Main Content Layout */
+              /* Main Content Layout */
         .main-content {
             display: flex;
             align-items: center;
@@ -32,22 +32,24 @@
             padding: 20px 10vw;
             margin-top: 100px; /* Space for the top bar */
         }
-
+        
         .title {
             font-size: 8rem;
             color: black;
             width: 50%;
         }
-
+        
         .photo {
-            width: 40%;
+            /* Remove the width constraint */
+            max-width: 100%; /* Ensure it doesn't exceed the container */
         }
-
+        
         .photo img {
-            width: 100%;
+            max-width: 100%; /* Ensure the image scales properly */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 10px;
         }
-
+        
         /* Carousel Styles */
         .carousel {
             display: flex;
@@ -56,14 +58,14 @@
             padding: 20px 0;
             margin-top: 20px;
         }
-
+        
         .carousel img {
             width: 200px;
             height: 150px;
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
-
+        
         .carousel img:hover {
             transform: scale(1.1);
         }
